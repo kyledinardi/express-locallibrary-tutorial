@@ -88,7 +88,10 @@ exports.book_create_post = [
       req.body.genre =
         typeof req.body.genre === 'undefined' ? [] : [req.body.genre];
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9268b869682a2de65d96abd7a0c8b3a4555cfd3a
     next();
   },
 
@@ -97,21 +100,34 @@ exports.book_create_post = [
     .trim()
     .isLength({ min: 1 })
     .escape(),
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9268b869682a2de65d96abd7a0c8b3a4555cfd3a
   body('author', 'Author must not be empty.')
     .trim()
     .isLength({ min: 1 })
     .escape(),
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9268b869682a2de65d96abd7a0c8b3a4555cfd3a
   body('summary', 'Summary must not be empty.')
     .trim()
     .isLength({ min: 1 })
     .escape(),
+<<<<<<< HEAD
 
   body('isbn', 'ISBN must not be empty').trim().isLength({ min: 1 }).escape(),
   body('genre.*').escape(),
 
   // Process request after validation and sanitization.
+=======
+  body('isbn', 'ISBN must not be empty').trim().isLength({ min: 1 }).escape(),
+  body('genre.*').escape(),
+  // Process request after validation and sanitization.
+
+>>>>>>> 9268b869682a2de65d96abd7a0c8b3a4555cfd3a
   asyncHandler(async (req, res, next) => {
     // Extract the validation errors from a request.
     const errors = validationResult(req);
@@ -235,7 +251,10 @@ exports.book_update_post = [
       req.body.genre =
         typeof req.body.genre === 'undefined' ? [] : [req.body.genre];
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9268b869682a2de65d96abd7a0c8b3a4555cfd3a
     next();
   },
 
@@ -244,17 +263,26 @@ exports.book_update_post = [
     .trim()
     .isLength({ min: 1 })
     .escape(),
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9268b869682a2de65d96abd7a0c8b3a4555cfd3a
   body('author', 'Author must not be empty.')
     .trim()
     .isLength({ min: 1 })
     .escape(),
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9268b869682a2de65d96abd7a0c8b3a4555cfd3a
   body('summary', 'Summary must not be empty.')
     .trim()
     .isLength({ min: 1 })
     .escape(),
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9268b869682a2de65d96abd7a0c8b3a4555cfd3a
   body('isbn', 'ISBN must not be empty').trim().isLength({ min: 1 }).escape(),
   body('genre.*').escape(),
 
